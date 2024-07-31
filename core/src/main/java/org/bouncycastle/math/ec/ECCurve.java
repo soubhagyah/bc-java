@@ -803,10 +803,6 @@ public abstract class ECCurve
                 throw new IllegalArgumentException("field size out of range: " + m);
             }
 
-            int[] exponents = (k2 | k3) == 0
-                ? new int[]{ 0, k1, m }
-                : new int[]{ 0, k1, k2, k3, m };
-
             if (k2 == 0)
             {
                 if (k3 != 0)
