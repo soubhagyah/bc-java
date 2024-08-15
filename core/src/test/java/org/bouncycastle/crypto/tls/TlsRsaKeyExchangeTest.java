@@ -5,7 +5,6 @@ import org.bouncycastle.crypto.engines.RSABlindedEngine;
 import org.bouncycastle.crypto.encodings.PKCS1Encoding;
 import org.bouncycastle.crypto.params.ParametersWithRandom;
 import org.bouncycastle.crypto.params.RSAKeyParameters;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.bouncycastle.util.test.SimpleTest;
 
 import java.security.SecureRandom;
@@ -20,7 +19,6 @@ public class TlsRsaKeyExchangeTest extends SimpleTest
 {
     public static void main(String[] args)
     {
-        Security.addProvider(new BouncyCastleProvider());
         runTest(new TlsRsaKeyExchangeTest());
     }
 
