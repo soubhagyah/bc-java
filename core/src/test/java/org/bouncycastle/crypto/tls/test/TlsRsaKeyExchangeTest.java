@@ -1,14 +1,17 @@
 
-package org.bouncycastle.crypto.tls;
+package org.bouncycastle.crypto.tls.test;
 
 import org.bouncycastle.crypto.engines.RSABlindedEngine;
 import org.bouncycastle.crypto.encodings.PKCS1Encoding;
 import org.bouncycastle.crypto.params.ParametersWithRandom;
 import org.bouncycastle.crypto.params.RSAKeyParameters;
+<<<<<<< Updated upstream:core/src/test/java/org/bouncycastle/crypto/tls/TlsRsaKeyExchangeTest.java
+=======
+import org.bouncycastle.crypto.tls.TlsRsaKeyExchange;
+>>>>>>> Stashed changes:core/src/test/java/org/bouncycastle/crypto/tls/test/TlsRsaKeyExchangeTest.java
 import org.bouncycastle.util.test.SimpleTest;
 
 import java.security.SecureRandom;
-import java.security.Security;
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 import java.security.interfaces.RSAPrivateKey;
